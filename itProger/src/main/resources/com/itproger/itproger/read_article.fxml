@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itproger.itproger.controllers.ReadArticleController">
+    <children>
+        <Label fx:id="article_title" layoutX="261.0" layoutY="39.0" text="Статья" textFill="#f7f0f0" AnchorPane.leftAnchor="261.0" AnchorPane.topAnchor="39.0">
+            <font>
+                <Font name="MontserratSubrayada-Bold" size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="to_articles_menu_btn" focusTraversable="false" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" stylesheets="@../../../styles/main.css" text="Вернуться" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <ScrollPane focusTraversable="false" hbarPolicy="NEVER" layoutX="-6.0" layoutY="100.0" prefHeight="302.0" prefWidth="600.0" style="-fx-background-color: #343434;">
+            <content>
+                <VBox fx:id="panel_vbox" prefHeight="299.0" prefWidth="601.0" style="-fx-background-color: #343434;">
+               <children>
+                  <TextArea fx:id="text_area" editable="false" focusTraversable="false" prefHeight="300.0" prefWidth="579.0" style="-fx-background-color: #343434; -fx-border-color: #343434; -fx-border-radius: 0; -fx-background-radius: 0;" stylesheets="@../../../styles/textArea.css" />
+               </children></VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

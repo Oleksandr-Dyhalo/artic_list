@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itproger.itproger.controllers.ArticlesPanelController">
+    <children>
+        <Label layoutX="208.0" layoutY="41.0" text="Новости с сайта" textFill="#f7f0f0" AnchorPane.leftAnchor="208.0" AnchorPane.topAnchor="41.0">
+            <font>
+                <Font name="MontserratSubrayada-Bold" size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="exit_btn" focusTraversable="false" layoutX="491.0" layoutY="37.0" mnemonicParsing="false" stylesheets="@../../../styles/main.css" text="Выйти" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <ScrollPane focusTraversable="false" hbarPolicy="NEVER" layoutY="100.0" prefHeight="302.0" prefWidth="600.0" style="-fx-background-color: #343434;">
+         <content>
+            <VBox fx:id="panel_vbox" prefHeight="299.0" prefWidth="601.0" style="-fx-background-color: #343434;" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="add_article_btn" focusTraversable="false" layoutX="14.0" layoutY="37.0" mnemonicParsing="false" stylesheets="@../../../styles/main.css" text="Добавить статью" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>
